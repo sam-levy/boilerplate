@@ -6,5 +6,3 @@ ReactOnRails.register({
   HelloWorld,
   PagesHome,
 });
-
-reactOnRails()
