@@ -6,7 +6,7 @@ export default class AppProvider extends Component {
 
   state = {
     number: 1,
-    increaseNumber: () => this.setState({number: this.state.number += 1})
+    incrementNumber: () => this.setState({number: this.state.number += 1})
   }
 
   render() {

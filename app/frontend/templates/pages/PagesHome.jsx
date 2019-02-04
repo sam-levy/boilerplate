@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import HelloWorld from '../../components/HelloWorld';
-import AppProvider, { AppContext } from '../../components/AppContext'
+import AppProvider, { AppContext } from '../../contexts/AppContext'
 
 import { Button } from 'semantic-ui-react'
 
@@ -10,7 +10,7 @@ export default class PagesHome extends Component {
       <AppProvider>
         <HelloWorld name={this.props.name} />
         <Number/>
-        <Increase/>
+        <IncrementNumber/>
       </AppProvider>
     )
   }
@@ -22,8 +22,8 @@ const Number = () => (
   </AppContext.Consumer>
 )
 
-const Increase = () => (
+const IncrementNumber = () => (
   <AppContext.Consumer>
-    {context => <Button content='Increase!' onClick={context.increaseNumber} />}
+    {context => <Button content='Increase!' onClick={context.incrementNumber} />}
   </AppContext.Consumer>
 )
