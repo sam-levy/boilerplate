@@ -10,6 +10,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'webpacker'
 gem 'react_on_rails', '11.1.4'
 gem 'mini_racer', platforms: :ruby
+gem 'rename'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
